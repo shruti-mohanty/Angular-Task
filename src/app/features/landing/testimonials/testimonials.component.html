@@ -1,0 +1,68 @@
+<section
+  id="testimonials"
+  class="testimonials">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <h2>
+
+        Hear from our
+        <span>Satisfies</span>
+        Clients
+
+      </h2>
+
+      <p>
+
+        We have Worked With Amazing Business
+
+      </p>
+
+    </div>
+
+
+    <div class="testimonial-grid">
+
+      @for(item of testimonials; track item.name){
+
+      <div class="testimonial-card">
+
+        <div class="logo-box">
+
+          <img
+            [src]="item.logo"
+            [alt]="item.name">
+
+        </div>
+
+        <p class="review">
+
+          {{ item.review }}
+
+        </p>
+
+        <hr>
+
+        <h4>
+
+          {{ item.name }}
+
+        </h4>
+
+        <span>
+
+          {{ item.company }}
+
+        </span>
+
+      </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

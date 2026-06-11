@@ -1,0 +1,61 @@
+<section
+  id="technologies"
+  class="technologies">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <span class="small-title">
+
+        Technologies We Use
+
+      </span>
+
+      <h2>
+
+        Building Tech-Driven Ecommerce Stores
+
+      </h2>
+
+    </div>
+
+    <div class="tech-grid">
+
+      @for(tech of technologies; track tech.title){
+
+      <div class="tech-card">
+
+        @if(tech.logo){
+
+        <img
+          [src]="tech.logo"
+          [alt]="tech.title">
+
+        }
+
+        @else {
+
+        <h3 class="text-logo">
+
+          {{ tech.title }}
+
+        </h3>
+
+        }
+
+        <p>
+
+          {{ tech.description }}
+
+        </p>
+
+      </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

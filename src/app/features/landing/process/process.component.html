@@ -1,0 +1,73 @@
+<section
+  id="process"
+  class="process">
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Our Process
+
+    </h2>
+
+    <div class="process-wrapper">
+
+      <!-- Left Tabs -->
+
+      <div class="tabs">
+
+        @for(phase of phases; track phase.title; let i = $index){
+
+        <button
+
+          class="tab-btn"
+
+          [class.active]="activeTab === i"
+
+          (click)="selectTab(i)">
+
+          {{ phase.title }}
+
+        </button>
+
+        }
+
+      </div>
+
+
+      <!-- Right Content -->
+
+      <div class="content-box">
+
+        <img
+          src="images/search.png"
+          alt="Search"
+          class="search-icon">
+
+        <h3>
+
+          {{ phases[activeTab].title }}
+
+        </h3>
+
+        <p>
+
+          {{ phases[activeTab].description }}
+
+        </p>
+
+        <button class="connect-btn">
+
+          LET'S CONNECT
+
+          <span>→</span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

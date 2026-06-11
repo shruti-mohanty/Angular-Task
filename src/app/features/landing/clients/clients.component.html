@@ -1,0 +1,42 @@
+<section
+  id="clients"
+  class="clients">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <h2>
+
+        Featured Clients
+
+      </h2>
+
+      <p>
+
+        We have Worked With Amazing Business
+
+      </p>
+
+    </div>
+
+
+    <div class="clients-grid">
+
+      @for(client of clients; track client){
+
+      <div class="client-card">
+
+        <img
+          [src]="client"
+          alt="Client Logo">
+
+      </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

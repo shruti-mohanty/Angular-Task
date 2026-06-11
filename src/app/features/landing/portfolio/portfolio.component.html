@@ -1,0 +1,90 @@
+<section id="portfolio" class="portfolio">
+
+    <div class="container">
+
+        <div class="portfolio-header">
+
+            <h2>Building The Best Of E-Commerce</h2>
+
+            <p>See What we've achieved for brands like yours</p>
+
+        </div>
+
+        <div class="portfolio-wrapper">
+
+            <button class="arrow-btn">
+                <span>‹</span>
+            </button>
+
+            <div class="portfolio-card">
+
+                <div class="portfolio-left">
+
+                    <h3>{{ project.name }}</h3>
+
+                    <div class="category">
+                        {{ project.category }}
+                    </div>
+
+                    <div class="stats">
+
+                        <div class="stat-item">
+                            <h4>{{ project.sales }}</h4>
+                            <p>Increase in Sales</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="stat-item">
+                            <h4>{{ project.conversion }}</h4>
+                            <p>Increase in Conversion Rate</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="stat-item">
+                            <h4>{{ project.orderValue }}</h4>
+                            <p>Increase in Order Value</p>
+                        </div>
+
+                    </div>
+
+                    <button class="case-btn">
+                        VIEW CASE STUDY →
+                    </button>
+
+                </div>
+
+                <div class="portfolio-right">
+
+                    <img [src]="project.laptopImage" alt="Laptop" class="laptop-img">
+
+                    <img [src]="project.mobileImage" alt="Mobile" class="mobile-img">
+
+                </div>
+
+            </div>
+
+            <button class="arrow-btn">
+                <span>›</span>
+            </button>
+
+        </div>
+
+        <div class="pagination">
+
+            <span>02</span>
+
+            <div class="line"></div>
+
+            <span>04</span>
+
+        </div>
+
+        <button class="view-btn">
+            VIEW ALL WORK ↗
+        </button>
+
+    </div>
+
+</section>

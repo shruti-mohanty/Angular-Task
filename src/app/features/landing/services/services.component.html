@@ -1,0 +1,75 @@
+<section id="services" class="services">
+    
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <h2>Our Services</h2>
+
+      <div class="title-line"></div>
+
+      <p>
+        We build exceptional <strong>ecommerce</strong> stores for ambitious
+        mid-market brands and enterprises that
+        <strong>accelerate conversions.</strong>
+        We are widely regarded as the best commerce
+        transformation company.
+      </p>
+
+    </div>
+
+    <div class="services-grid">
+
+      @for(service of services; track service.id){
+
+      <div class="service-card">
+
+        <div class="card-header">
+
+          <img
+            [src]="service.icon"
+            [alt]="service.title">
+
+          <span class="card-number">
+            {{ service.id }}
+          </span>
+
+        </div>
+
+        <h3>
+          {{ service.title }}
+        </h3>
+
+        <ul>
+
+          @for(point of service.points; track point){
+
+          <li>
+            ➢ {{ point }}
+          </li>
+
+          }
+
+        </ul>
+
+      </div>
+
+      }
+
+    </div>
+    <div class="services-btn-wrapper">
+
+  <button class="project-btn">
+
+    START YOUR PROJECT
+
+    <span>→</span>
+
+  </button>
+
+</div>
+
+  </div>
+
+</section>

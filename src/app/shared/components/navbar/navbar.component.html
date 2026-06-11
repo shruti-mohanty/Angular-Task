@@ -1,0 +1,95 @@
+<header class="header">
+
+  <div class="container navbar">
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+      <img
+        src="logos/logo.png"
+        alt="Kushel Digi Logo">
+
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <div
+      class="menu-toggle"
+      (click)="toggleMenu()">
+
+      ☰
+
+    </div>
+
+    <!-- Navigation -->
+
+    <nav [class.active]="isMenuOpen">
+
+      <ul>
+
+        <li>
+
+          <a
+            (click)="scrollTo('home'); setActive('home')"
+            [class.active]="activeLink() === 'home'">
+
+            Home
+
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            (click)="scrollTo('about'); setActive('about')"
+            [class.active]="activeLink() === 'about'">
+
+            About Us
+
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            (click)="scrollTo('services'); setActive('services')"
+            [class.active]="activeLink() === 'services'">
+
+            Service
+
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            (click)="scrollTo('portfolio'); setActive('portfolio')"
+            [class.active]="activeLink() === 'portfolio'">
+
+            Portfolio
+
+          </a>
+
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- Contact Button -->
+
+    <button
+      class="contact-btn"
+      (click)="scrollTo('contact'); setActive('contact')">
+
+      Contact Us
+
+    </button>
+
+  </div>
+
+</header>

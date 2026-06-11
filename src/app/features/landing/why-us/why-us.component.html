@@ -1,0 +1,56 @@
+<section id="why-us" class="why-us">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <h2>
+
+        Discover why
+
+        <span>Kushel Digi Solutions</span>
+
+        Stands Out
+
+      </h2>
+
+      <p>
+
+        Discover why Kushel Digi Solutions stands out with innovative strategies and personalized service
+
+      </p>
+
+    </div>
+
+    <div class="why-grid">
+
+      @for(item of features; track item.title){
+
+      <div class="why-card">
+
+        <img
+          [src]="item.image"
+          [alt]="item.title"
+          class="why-icon">
+
+        <h3>
+
+          {{ item.title }}
+
+        </h3>
+
+        <p>
+
+          {{ item.description }}
+
+        </p>
+
+      </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
